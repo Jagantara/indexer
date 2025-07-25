@@ -8,8 +8,6 @@ It supports querying data for:
 - 💸 **Unstakes**
 - 🎁 **Reward Claims**
 
-> Designed to power the **Jagantara dApp** staking dashboard and analytics. Easily deployable on Railway for free.
-
 ---
 
 ## 🔗 Why Lisk?
