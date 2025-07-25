@@ -38,16 +38,16 @@ ponder.on("JagaStake:Unstaked", async ({ event, context }) => {
 });
 
 // Reward Claimed Event
-ponder.on("JagaStake:Claimed", async ({ event, context }) => {
-  const { user, reward } = event.args;
+// Reward Paid Event
+// ponder.on("JagaStake:RewardPaid", async ({ event, context }) => {
+//   const { user, reward } = event.args;
 
-  await context.db.insert(rewardClaims).values({
-    id: `${event.transaction.hash}-${event.log.logIndex}`,
-    user: user,
-    session: event.args.session,
-    reward: reward,
-    blockNumber: event.block.number,
-    timestamp: event.block.timestamp,
-    transactionHash: event.transaction.hash,
-  });
-});
+//   await context.db.insert(rewardClaims).values({
+//     id: `${event.transaction.hash}-${event.log.logIndex}`,
+//     user: user,
+//     reward: reward,
+//     blockNumber: event.block.number,
+//     timestamp: event.block.timestamp,
+//     transactionHash: event.transaction.hash,
+//   });
+// });

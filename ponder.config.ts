@@ -4,29 +4,29 @@ import { ERC20_ABI, JAGA_STAKE_ABI } from "./abis/StakeAbi";
 
 export default createConfig({
   chains: {
-    monadTestnet: {
-      id: 10143,
-      rpc: http("https://testnet-rpc.monad.xyz"),
+    liskTestnet: {
+      id: 4202,
+      rpc: http("https://rpc.sepolia-api.lisk.com"),
     },
   },
   contracts: {
     JagaStake: {
-      chain: "monadTestnet",
-      address: "0x5937E869E575a37f8EFc9f496F2cE4dFd1F0E2aD",
+      chain: "liskTestnet",
+      address: "0x65165BFb8162744E1C5251c1deB196bB270fE1eE",
       abi: JAGA_STAKE_ABI,
-      startBlock: 24819604,
+      startBlock: 24056228,
     },
     JagaToken: {
-      chain: "monadTestnet",
-      address: "0x2FD93A232bEE86af183Cb219dca1a2c379654ba5",
+      chain: "liskTestnet",
+      address: "0x529bB304E550E21938c20D1E27EAa4EE0dB549E6",
       abi: ERC20_ABI,
-      startBlock: 24819604,
+      startBlock: 24056228,
     },
     USDC: {
-      chain: "monadTestnet",
-      address: "0x59104255fDe0Da71B8FfBeE62e187623F35686b7",
+      chain: "liskTestnet",
+      address: "0xA2D17a5CAEbEC48a32fF945aAF5471Eb9b989345",
       abi: ERC20_ABI,
-      startBlock: 24819604,
+      startBlock: 24056228,
     },
   },
 });
