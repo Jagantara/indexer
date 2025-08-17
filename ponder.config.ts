@@ -12,21 +12,21 @@ export default createConfig({
   contracts: {
     JagaStake: {
       chain: "liskTestnet",
-      address: "0x65165BFb8162744E1C5251c1deB196bB270fE1eE",
+      address: "0xe2317847BDaf117b4293A1835738ef458CE5f3D7",
       abi: JAGA_STAKE_ABI,
-      startBlock: 24056228,
+      startBlock: 25066484,
     },
     JagaToken: {
       chain: "liskTestnet",
-      address: "0x529bB304E550E21938c20D1E27EAa4EE0dB549E6",
+      address: "0x5287fcEDEF1f494015982C5196aF6815CB3e11A1",
       abi: ERC20_ABI,
-      startBlock: 24056228,
+      startBlock: 25066484,
     },
     USDC: {
       chain: "liskTestnet",
-      address: "0xA2D17a5CAEbEC48a32fF945aAF5471Eb9b989345",
+      address: "0x0E0F426A812ed0EE7A4777C9c3b0DF5057C56523",
       abi: ERC20_ABI,
-      startBlock: 24056228,
+      startBlock: 25066484,
     },
   },
 });
