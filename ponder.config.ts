@@ -8,25 +8,29 @@ export default createConfig({
       id: 4202,
       rpc: http("https://rpc.sepolia-api.lisk.com"),
     },
+    baseTestnet: {
+      id: 84532,
+      rpc: http("https://sepolia.base.org"),
+    },
   },
   contracts: {
     JagaStake: {
-      chain: "liskTestnet",
-      address: "0xe2317847BDaf117b4293A1835738ef458CE5f3D7",
+      chain: "baseTestnet",
+      address: "0x8eBEbF610bFa0b55B58b45B9cE61a2cCF5C68C9D",
       abi: JAGA_STAKE_ABI,
-      startBlock: 25066484,
+      startBlock: 32361234,
     },
     JagaToken: {
-      chain: "liskTestnet",
-      address: "0x5287fcEDEF1f494015982C5196aF6815CB3e11A1",
+      chain: "baseTestnet",
+      address: "0x685669079EfeA9EC17E22d52712AD153A47A22B0",
       abi: ERC20_ABI,
-      startBlock: 25066484,
+      startBlock: 32361234,
     },
     USDC: {
-      chain: "liskTestnet",
-      address: "0x0E0F426A812ed0EE7A4777C9c3b0DF5057C56523",
+      chain: "baseTestnet",
+      address: "0x37C95286A8b3b88755846dE0E16c9B93cAA0c073",
       abi: ERC20_ABI,
-      startBlock: 25066484,
+      startBlock: 32361234,
     },
   },
 });
